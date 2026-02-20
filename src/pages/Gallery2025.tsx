@@ -25,8 +25,10 @@ const imageListSorted = (glob: Record<string, { default: string }>) => {
 };
 
 /** Ensures asset URL works on GitHub Pages (prefix with base when needed). */
-const withBase = (url: string) =>
-  url.startsWith("http") ? url : `${assetBase}${url.startsWith("/") ? url : `/${url}`}`;
+const withBase = (url: string) => {
+  if (!url || typeof url !== "string") return "";
+  return url.startsWith("http") ? url : `${assetBase}${url.startsWith("/") ? url : `/${url}`}`;
+};
 
 function Carousel({
   photos,
