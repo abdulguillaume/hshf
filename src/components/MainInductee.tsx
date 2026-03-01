@@ -2,7 +2,9 @@ import mainInducteeImg from "../assets/images/main-inductee.jpg";
 
 function MainInductee() {
   return (
-    <section className="px-4 sm:px-6 pt-32 sm:pt-32 lg:pt-32 pb-12 lg:pb-16 max-w-4xl mx-auto relative">
+    <section 
+    id="inductees"
+    className="px-4 sm:px-6 pt-32 sm:pt-32 lg:pt-32 pb-12 lg:pb-16 max-w-4xl mx-auto relative">
       
       <h2 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl font-extrabold mb-10 text-center text-gray-900">
         2026 Inductee
