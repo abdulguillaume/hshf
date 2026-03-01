@@ -13,14 +13,14 @@ function Footer() {
         {/* Social Icons */}
         <div className="flex gap-4 sm:gap-6 justify-center sm:justify-end">
           <a
-            href="https://www.facebook.com"
+            href="https://web.facebook.com/people/Haitian-Sports-All-Of-Fame/61579017327802/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-white/10 p-3 rounded-full hover:bg-blue-600 hover:text-white transition-all duration-300 shadow-md"
           >
             <FaFacebookF size={18} />
           </a>
-          <a
+          {/*<a
             href="https://www.youtube.com"
             target="_blank"
             rel="noopener noreferrer"
@@ -35,7 +35,7 @@ function Footer() {
             className="bg-white/10 p-3 rounded-full hover:bg-blue-400 hover:text-white transition-all duration-300 shadow-md"
           >
             <FaTwitter size={18} />
-          </a>
+          </a>*/}
         </div>
       </div>
     </footer>

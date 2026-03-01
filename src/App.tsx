@@ -2,6 +2,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Mission from "./components/Mission";
 import MainInductee from "./components/MainInductee";
+import SecondInductee from "./components/SecondInductee";
 import Committee from "./components/Committee";
 import Event from "./components/Event";
 import Highlights from "./components/Highlights";
@@ -16,6 +17,7 @@ function HomePage() {
       <Header />
       <Mission />
       <MainInductee />
+      <SecondInductee />
       <Committee />
       <Event />
       <Sponsors />

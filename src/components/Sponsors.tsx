@@ -6,21 +6,21 @@ function Sponsors() {
   const sponsors = [
     {
       img: sponsor1Img,
-      name: "Elite Sports Foundation",
+      name: "New York Kreyol",
       description:
-        "Supporting Haitian athletes for over 10 years, promoting excellence, training, and community outreach programs.",
+        "",
     },
     {
       img: sponsor2Img,
-      name: "Global Fitness Co.",
+      name: "Klasic Enterprises",
       description:
-        "Providing top-notch equipment and resources to help athletes reach their peak performance.",
+        "",
     },
     {
       img: sponsor3Img,
-      name: "Community Partners",
+      name: "One 11 Realty",
       description:
-        "Investing in local sports initiatives, empowering young talent, and fostering the next generation of champions.",
+        "",
     },
   ];
 

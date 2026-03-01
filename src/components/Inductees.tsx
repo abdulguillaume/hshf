@@ -1,12 +1,8 @@
-import inductee1Img from "../assets/images/inductee1.jpg";
-import inductee2Img from "../assets/images/inductee2.jpg";
-import inductee3Img from "../assets/images/inductee3.jpg";
+import inductee1Img from "../assets/images/drbernardnau.jpg";
 
 function Inductees() {
   const inductees = [
-    { name: "Marie Toussaint", sport: "Basketball", img: inductee1Img },
-    { name: "Alexandre Jean", sport: "Athletics", img: inductee2Img },
-    { name: "Claude Baptiste", sport: "Coaching", img: inductee3Img },
+    { name: "Marie Toussaint", sport: "Basketball", img: inductee1Img }
   ];
 
   return (

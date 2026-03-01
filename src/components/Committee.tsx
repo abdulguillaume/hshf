@@ -19,12 +19,14 @@ function Committee() {
   const committeeMembers = [
     { name: "Jacky Philemon", title: "President" },
     { name: "Wesly Borgella", title: "Vice-President" },
-    { name: "Claude Jean-Louis", title: "Treasurer" },
+    { name: "Abdul J. James", title: "Treasurer & Tech Advisor" },
+    { name: "Claude Jean-Louis", title: "Senior Advisor" },
     { name: "Jord Mike Norgaisse", title: "Secretary General" },
     { name: "Joseph Kary Julien", title: "Senior Advisor" },
     { name: "Claudianie Dorcelet", title: "Head of Protocol" },
     { name: "Alain M. Laverne", title: "Head of Marketing" },
-    { name: "Tony valbrun ", title: "Senior Advisor" },
+    { name: "Tony Valbrun ", title: "Senior Advisor" },
+    { name: "Georges Toussaint ", title: "Senior Advisor" },
   ];
 
   return (

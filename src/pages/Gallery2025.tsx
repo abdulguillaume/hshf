@@ -11,9 +11,6 @@ const basketballImages = import.meta.glob<{ default: string }>(
   { eager: true }
 );
 
-/** Base URL for assets (needed for GitHub Pages subpath, e.g. /hshf/). */
-const assetBase = import.meta.env.BASE_URL.replace(/\/$/, "") || "";
-
 /** Returns image URLs sorted by filename (path) so order is consistent. */
 const imageListSorted = (glob: Record<string, { default: string }>) => {
   const entries = Object.entries(glob).map(([path, mod]) => ({
@@ -22,12 +19,6 @@ const imageListSorted = (glob: Record<string, { default: string }>) => {
   }));
   entries.sort((a, b) => a.path.localeCompare(b.path));
   return entries.map((e) => e.src);
-};
-
-/** Ensures asset URL works on GitHub Pages (prefix with base when needed). */
-const withBase = (url: string) => {
-  if (!url || typeof url !== "string") return "";
-  return url.startsWith("http") ? url : `${assetBase}${url.startsWith("/") ? url : `/${url}`}`;
 };
 
 function Carousel({
@@ -88,8 +79,8 @@ function Carousel({
 
 function Gallery2025() {
   const navigate = useNavigate();
-  const ceremonyPhotos = imageListSorted(ceremonyImages).map(withBase);
-  const basketballPhotos = imageListSorted(basketballImages).map(withBase);
+  const ceremonyPhotos = imageListSorted(ceremonyImages);
+  const basketballPhotos = imageListSorted(basketballImages);
 
   return (
     <div className="min-h-screen bg-white px-4 sm:px-6 py-12">

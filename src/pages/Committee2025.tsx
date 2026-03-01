@@ -23,7 +23,7 @@ const toImageSlug = (name: string) =>
 const committeeMembers = [
   { name: "Jacky Philemon", title: "President" },
   { name: "Wesly Borgella", title: "Vice-President" },
-  { name: "Abdul Guillaume", title: "Tech Advisor" }
+  { name: "Abdul J. James", title: "Tech Advisor" }
 ];
 
 function Committee2025() {
